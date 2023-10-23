@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="first.js"></script>
+
+</head>
+<body>
+    
+<div id="container">
+<h1>Add a comment</h1>
+<br>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquam odit deserunt hic corporis quo autem e</p>
+<p>Voluptates commodi exercitationem repellendus quia, doloribus consequatur itaque ratione, cumque animi </p>
+<p>Et temporibus totam explicabo corrupti exercitationem at doloremque quod magnam, possimus similique adipisci?</p>
+
+</div>
+
+<div>
+
+<textarea name="" id="comment" cols="60" rows="10"></textarea>
+
+<br>
+
+<button id="post">Post</button>
+
+
+
+
+
+</div>
+
+
+
+<script>
+
+document.getElementById('post').addEventListener('click',function(){
+
+const new_comment=document.getElementById('comment').value
+
+
+const p=document.createElement('p')
+p.innerText=new_comment
+
+document.getElementById('container').appendChild(p)
+document.getElementById('comment').value=''
+
+})
+
+
+
+
+</script>
+
+</body>
+</html> 
